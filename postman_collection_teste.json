@@ -1,0 +1,130 @@
+{
+	"variables": [],
+	"info": {
+		"name": "GIT / exercicio-ce-ifes",
+		"_postman_id": "9f8de496-46a8-2eb4-1e09-e9c5e34b5a14",
+		"description": "API básica de uma loja virtual. Exercício da disciplina de Comércio Eletrônico - IFES/Serra.\n\nhttps://github.com/viniciuslj/exercicio-ce-ifes",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "GET /produtos",
+			"request": {
+				"url": "localhost:8000/api/produtos",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "GET /produtos/:id",
+			"request": {
+				"url": "localhost:8000/api/produtos/1",
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "POST /produtos",
+			"request": {
+				"url": "localhost:8000/api/produtos",
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Produto X\",\n\t\"marca\": \"Marca Y\",\n\t\"preco\": 999.99\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "PUT /produtos/:id",
+			"request": {
+				"url": "localhost:8000/api/produtos/1",
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"nome\": \"Produto X\",\n\t\"marca\": \"Marca Y\",\n\t\"preco\": 1.00\n}"
+				},
+				"description": ""
+			},
+			"response": []
+		},
+		{
+			"name": "DELETE /produtos/:id",
+			"request": {
+				"url": "localhost:8000/api/produtos/1",
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"description": ""
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"description": ""
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"description": ""
+			},
+			"response": []
+		}
+	]
+}
