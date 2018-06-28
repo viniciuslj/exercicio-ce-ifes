@@ -129,7 +129,7 @@ Essa linha adicionará as seguintes rotas na aplicação:
     > SQL equivalente: `SELECT * FROM produtos;`
 
 - Criando um produto [(HTTP POST)](https://restfulapi.net/http-methods/#post)<br>
-    *(Para atribuições de campos em massa, consulte [Mass Assignment](https://laravel.com/docs/5.6/eloquent#mass-assignment))*
+    > Para atribuições de campos em massa, consulte [Mass Assignment](https://laravel.com/docs/5.6/eloquent#mass-assignment)
     ```php
     public function store(Request $request)
     {
@@ -156,7 +156,7 @@ Essa linha adicionará as seguintes rotas na aplicação:
     > SQL equivalente: `SELECT * FROM produtos WHERE id = $id;`
 
 - Alterando os dados de um produto [(HTTP PUT)](https://restfulapi.net/http-methods/#put)<br>
-    *O produto atualizado é retornado.*
+    > O produto atualizado é retornado.
     ```php
     public function update(Request $request, $id)
     {
@@ -171,7 +171,7 @@ Essa linha adicionará as seguintes rotas na aplicação:
     > SQL equivalente: `UPDATE produtos SET ... WHERE id = $id;`
 
 - Removendo um produto [(HTTP DELETE)](https://restfulapi.net/http-methods/#delete)<br>
-    *O produto removido é retornado.*
+    > O produto removido é retornado.
     ```php
     public function destroy($id)
     {
